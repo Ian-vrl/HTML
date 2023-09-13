@@ -1,4 +1,6 @@
-body {
+ /*Geral */
+body  {
+
     font-family: Helvetica;
     text-align: center;
     color: white;
@@ -6,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
 }
-
+/* Estilo aplicado nos elementos dentro da barra de navegação (nav) */
 nav {
     display: flex;
     justify-content: space-between;
@@ -14,7 +16,7 @@ nav {
     align-items: center;
     border-bottom: 1px solid #666;
 }
-
+/*Estilo aplicado na lista não ordenada dentro da barra de navegação */
 nav ul{
     display: flex;
     list-style: none;
@@ -24,25 +26,30 @@ ul li{
     margin-right: 12px;
 }
 
+/* Estilo aplicado para os elementos com tag "a" dentro da lista" */
 ul li a{
     color: #fff;
     text-decoration: none;
     transition:  0.5s;
 }
 
+/* aplicado cor ao passar o mouse no texto da lista */
 ul li a:hover{
     color: rgb(15, 89, 150);
 }
 
+/* Estilo aplicado para a tag h1*/
 h1 {
     font-size: 32px;
 }
 
+/* Estilo aplicado na imagem */
 img {
     border: 3px solid rgb(15, 194, 218);
     height: 350px;
 }
 
+/* Estilo aplicado no rodape do site */
 footer{
     padding: 20px;
     border-top: 1px solid #666;
