@@ -22,6 +22,7 @@ nav ul{
     list-style: none;
 }
 
+/* Estilo aplicado a todos os items da lista */
 ul li{
     margin-right: 12px;
 }
