@@ -10,7 +10,8 @@ nav{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    border-bottom: 2px solid #666;
+    border-bottom: 3px solid black;
+    background-color: darkgray;
 }
 
 
@@ -35,13 +36,10 @@ div{
 }
 
 img{
-
-    border: 2px solid rgb(15, 194, 218);
+    
+    border: 2px solid gray;
     height: 500px;
 }
-
-
-
 
 header{
     border-bottom: 4px solid black;
