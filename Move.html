@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>ATV Move</title>
+		<meta http-equiv="Content-Type" content="text/html; chatset=utf-8">
+		<meta chatset="utf-8">
+	</head>
+
+
+	<body onkeydown="keyPress(event)">
+		<div class="wrap">
+			<div id="caixa" style="position: absolute; display: block; width: 100px; height: 100px; background-color: blue">
+		</div>
+		
+		<script language="javascript">			
+			var caixa = document.getElementById('caixa');
+			let win = window.innerHeight;
+			var top_position = 0;
+			var left_position= 0;
+
+			function keyPress(event) {
+				const key = event.key;
+				if(key == 'ArrowUp') up();
+				if(key == 'ArrowDown') down();
+				if(key == 'ArrowRight') right();
+				if(key == 'ArrowLeft') left();
+				if(key == 'w') up();
+				if(key == 'd') right();
+				if(key == 'a') left();
+				if(key == 's') down();
+			}
+
+			function left() {
+				if(left_position == 0) return;
+				left_position -= 10;
+				caixa.style.marginLeft= `${left_position}px`
+			}
+
+			function right() {
+				if((left_position + 120) >= window.innerWidth) return;
+				left_position += 10;
+				caixa.style.marginLeft = `${left_position}px`
+			}
+		
+			function down() {
+				if ((top_position + 120) < win) {		
+					top_position += 10;
+
+					caixa.style.marginTop=`${top_position}px`
+				}
+			}
+			
+			function up() {
+			    if(top_position == 0) return;
+				top_position -= 10;
+				caixa.style.marginTop=`${top_position}px`
+			}
+
+			
+		</script>
+	
+		</div>
+	</body>
+</html>
